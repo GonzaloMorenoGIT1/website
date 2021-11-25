@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo pagina inicial.svg" type="image/x-icon">
+    <title>Formulario2</title>
+    <style>
+        body{
+            background:linear-gradient(to right,green,blue,purple);
+        }
+        form{
+            text-align: center;
+            border: groove;
+            border-color:black ;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 10%;
+            background-color: aquamarine;
+        }
+    </style>
+    <script>
+     
+        function Alertar() {
+            let nombre=document.getElementById("nombre").value;
+            let  email=document.getElementById("email").value;
+            let vacio=null;
+            var numer=32344;
+            if((nombre=nombre)){
+                alert("Nombre rellenado correctamente "+nombre);
+
+            }else{
+                alert("Tienes que Rellenar el nombre"); 
+            }        
+}        
+    </script>
+</head>
+<body>
+    <form action="formuario">
+        <h1>Datos del Empleado</h1>
+        <span>Nombre del empleado <input type="text" id="nombre"></span><br>
+        <span>Fecha <input type="date" name="date"></span><br>
+        <span>Email <input type="email" name="email" id="email"></span><br>
+        <span>Salario (entre 900 y 3000) <input type="text"></span><br>
+        <span>Hora <input type="time" name="reloj" id=""></span><br>
+        <span>Mes de Alta <input type="month" name="" id=""> </span><br>
+        <span>Matricula del automil <input type="text" name="" id=""></span><br>
+        <input type="button" onclick="Alertar()" onclick="getElementById()" value="Enviar"><input type="reset" value="Limpiar">
+    </form>
+    
+</body>
+</html>
